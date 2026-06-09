@@ -1,0 +1,45 @@
+import type { Producto } from "@/data/tiendaAroma";
+
+const CATEGORY_SINGULAR: Record<Producto["category"], string> = {
+  conos: "Cono",
+  difusores: "Difusor",
+  sahumerios: "Sahumerio",
+  spray: "Spray",
+};
+
+const BRAND_LABEL: Record<Producto["brand"], string> = {
+  aromanza: "Aromanza",
+  buenaEnergia: "Buena Energía",
+  cannabis: "Cannabis",
+  perfum: "Perfum",
+};
+
+function humanize(camel: string): string {
+  const spaced = camel.replace(/([a-z])([A-Z])/g, "$1 $2");
+  return spaced.charAt(0).toUpperCase() + spaced.slice(1);
+}
+
+export function formatProductName(producto: Producto): string {
+  return `${CATEGORY_SINGULAR[producto.category]} ${humanize(producto.fragrance)}`;
+}
+
+export function formatFragrance(fragrance: string): string {
+  return humanize(fragrance);
+}
+
+export function formatBrand(brand: Producto["brand"]): string {
+  return BRAND_LABEL[brand];
+}
+
+export function formatCategory(category: Producto["category"]): string {
+  return category.charAt(0).toUpperCase() + category.slice(1);
+}
+
+export function formatPrice(value: number): string {
+  return new Intl.NumberFormat("es-AR", {
+    style: "currency",
+    currency: "ARS",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(value);
+}
