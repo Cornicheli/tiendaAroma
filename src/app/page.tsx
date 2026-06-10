@@ -11,6 +11,7 @@ import {
 } from "@/components/Filters";
 import { ProductGrid } from "@/components/ProductGrid";
 import { CartDrawer } from "@/components/CartDrawer";
+import { Footer } from "@/components/Footer";
 import { tiendaAroma } from "@/data/tiendaAroma";
 
 export default function Home() {
@@ -72,14 +73,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-border/60 bg-card/40">
-        <div className="mx-auto max-w-7xl px-4 py-8 text-center text-xs text-muted-foreground sm:px-6 lg:px-8">
-          <p className="font-serif text-base text-foreground">Tienda Aroma</p>
-          <p className="mt-1">
-            Aromas seleccionados · Pedidos por WhatsApp · Envíos a coordinar
-          </p>
-        </div>
-      </footer>
+      <Footer />
 
       <CartDrawer />
     </>
