@@ -11,8 +11,23 @@ import {
 export type Categoria = Producto["category"];
 export type Marca = Producto["brand"];
 
-const CATEGORIAS: Categoria[] = ["conos", "difusores", "sahumerios", "spray"];
-const MARCAS: Marca[] = ["aromanza", "buenaEnergia", "cannabis", "perfum"];
+const CATEGORIAS: Categoria[] = [
+  "bombasDeOlores",
+  "conos",
+  "difusores",
+  "sahumerios",
+  "shapirus",
+  "spray",
+];
+const MARCAS: Marca[] = [
+  "argentina",
+  "aromanza",
+  "bombasDeOlores",
+  "buenaEnergia",
+  "cannabis",
+  "perfum",
+  "shapirus",
+];
 
 type Props = {
   categorias: Set<Categoria>;

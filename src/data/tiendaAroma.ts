@@ -2,8 +2,8 @@ export interface Producto {
   name: string;
   photo: string[];
   price: number;
-  category: "difusores" | "spray" | "sahumerios" | "conos";
-  brand: "aromanza" | "buenaEnergia" | "cannabis" | "perfum";
+  category: "difusores" | "spray" | "sahumerios" | "conos" | "bombasDeOlores" | "shapirus";
+  brand: "aromanza" | "buenaEnergia" | "cannabis" | "perfum" | "bombasDeOlores" | "shapirus" | "argentina";
   fragrance: string;
   stock: number;
 }
@@ -163,6 +163,24 @@ export const tiendaAroma: Producto[] = [
     stock: 10,
   },
   {
+    name: "sahumerios argentina momentos",
+    photo: ["/sahumerios/argentina/momentos_f.png", "/sahumerios/argentina/momentos_b.png"],
+    price: 3500,
+    category: "sahumerios",
+    brand: "argentina",
+    fragrance: "momentos",
+    stock: 10,
+  },
+  {
+    name: "sahumerios argentina paloSanto",
+    photo: ["/sahumerios/argentina/paloSanto_f.png", "/sahumerios/argentina/paloSanto_b.png"],
+    price: 5000,
+    category: "sahumerios",
+    brand: "argentina",
+    fragrance: "paloSanto",
+    stock: 10,
+  },
+  {
     name: "conos cannabis blueDream",
     photo: ["/conos/cannabis/blueDream-f.png", "/conos/cannabis/blueDream-b.png"],
     price: 2500,
@@ -187,6 +205,78 @@ export const tiendaAroma: Producto[] = [
     category: "conos",
     brand: "cannabis",
     fragrance: "waterMelonWonder",
+    stock: 10,
+  },
+  {
+    name: "bombasDeOlores bombasDeOlores atraeDinero",
+    photo: ["/bombasdeolores/atraeDinero.png"],
+    price: 800,
+    category: "bombasDeOlores",
+    brand: "bombasDeOlores",
+    fragrance: "atraeDinero",
+    stock: 10,
+  },
+  {
+    name: "bombasDeOlores bombasDeOlores limpieza",
+    photo: ["/bombasdeolores/limpieza.png"],
+    price: 800,
+    category: "bombasDeOlores",
+    brand: "bombasDeOlores",
+    fragrance: "limpieza",
+    stock: 10,
+  },
+  {
+    name: "bombasDeOlores bombasDeOlores paloSanto",
+    photo: ["/bombasdeolores/paloSanto.png"],
+    price: 800,
+    category: "bombasDeOlores",
+    brand: "bombasDeOlores",
+    fragrance: "paloSanto",
+    stock: 10,
+  },
+  {
+    name: "bombasDeOlores bombasDeOlores poderes",
+    photo: ["/bombasdeolores/poderes.png"],
+    price: 800,
+    category: "bombasDeOlores",
+    brand: "bombasDeOlores",
+    fragrance: "poderes",
+    stock: 10,
+  },
+  {
+    name: "shapirus shapirus bella",
+    photo: ["/shapirus/bella.png"],
+    price: 5000,
+    category: "shapirus",
+    brand: "shapirus",
+    fragrance: "bella",
+    stock: 10,
+  },
+  {
+    name: "shapirus shapirus bubblegun",
+    photo: ["/shapirus/bubblegun.png"],
+    price: 5000,
+    category: "shapirus",
+    brand: "shapirus",
+    fragrance: "bubblegun",
+    stock: 10,
+  },
+  {
+    name: "shapirus shapirus duret",
+    photo: ["/shapirus/duret.png"],
+    price: 5000,
+    category: "shapirus",
+    brand: "shapirus",
+    fragrance: "duret",
+    stock: 10,
+  },
+  {
+    name: "shapirus shapirus vainilla",
+    photo: ["/shapirus/vainilla.png"],
+    price: 5000,
+    category: "shapirus",
+    brand: "shapirus",
+    fragrance: "vainilla",
     stock: 10,
   },
 ];

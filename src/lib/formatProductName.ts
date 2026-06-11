@@ -1,17 +1,22 @@
 import type { Producto } from "@/data/tiendaAroma";
 
 const CATEGORY_SINGULAR: Record<Producto["category"], string> = {
+  bombasDeOlores: "Bomba de olor",
   conos: "Cono",
   difusores: "Difusor",
   sahumerios: "Sahumerio",
+  shapirus: "Shapirus",
   spray: "Spray",
 };
 
 const BRAND_LABEL: Record<Producto["brand"], string> = {
+  argentina: "Sahumerios Argentina",
   aromanza: "Aromanza",
+  bombasDeOlores: "Bombas de olor",
   buenaEnergia: "Buena Energía",
   cannabis: "Cannabis",
   perfum: "Perfum",
+  shapirus: "Shapirus",
 };
 
 function humanize(camel: string): string {
@@ -32,7 +37,7 @@ export function formatBrand(brand: Producto["brand"]): string {
 }
 
 export function formatCategory(category: Producto["category"]): string {
-  return category.charAt(0).toUpperCase() + category.slice(1);
+  return humanize(category);
 }
 
 export function formatPrice(value: number): string {
