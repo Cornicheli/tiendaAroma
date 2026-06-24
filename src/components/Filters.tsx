@@ -25,6 +25,8 @@ const MARCAS: Marca[] = [
   "bombasDeOlores",
   "buenaEnergia",
   "cannabis",
+  "cascada",
+  "magicos",
   "perfum",
   "shapirus",
 ];

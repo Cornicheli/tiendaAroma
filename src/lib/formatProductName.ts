@@ -15,12 +15,16 @@ const BRAND_LABEL: Record<Producto["brand"], string> = {
   bombasDeOlores: "Bombas de olor",
   buenaEnergia: "Buena Energía",
   cannabis: "Cannabis",
+  cascada: "Cascada",
+  magicos: "Sahumerios Mágicos",
   perfum: "Perfum",
   shapirus: "Shapirus",
 };
 
 function humanize(camel: string): string {
-  const spaced = camel.replace(/([a-z])([A-Z])/g, "$1 $2");
+  const spaced = camel
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/([A-Z])([A-Z][a-z])/g, "$1 $2");
   return spaced.charAt(0).toUpperCase() + spaced.slice(1);
 }
 

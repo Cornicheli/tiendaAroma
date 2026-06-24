@@ -3,7 +3,7 @@ export interface Producto {
   photo: string[];
   price: number;
   category: "difusores" | "spray" | "sahumerios" | "conos" | "bombasDeOlores" | "shapirus";
-  brand: "aromanza" | "buenaEnergia" | "cannabis" | "perfum" | "bombasDeOlores" | "shapirus" | "argentina";
+  brand: "aromanza" | "buenaEnergia" | "cannabis" | "perfum" | "bombasDeOlores" | "shapirus" | "argentina" | "magicos" | "cascada";
   fragrance: string;
   stock: number;
 }
@@ -70,6 +70,24 @@ export const tiendaAroma: Producto[] = [
     category: "spray",
     brand: "buenaEnergia",
     fragrance: "prosperidad",
+    stock: 10,
+  },
+  {
+    name: "spray buenaEnergia aromatizadorDeChakras",
+    photo: ["/spray/buenaEnergia/aromatizadordechakras.png"],
+    price: 3500,
+    category: "spray",
+    brand: "buenaEnergia",
+    fragrance: "aromatizadorDeChakras",
+    stock: 10,
+  },
+  {
+    name: "spray buenaEnergia regeneradorDeAura",
+    photo: ["/spray/buenaEnergia/regeneradordeaura.png"],
+    price: 3500,
+    category: "spray",
+    brand: "buenaEnergia",
+    fragrance: "regeneradorDeAura",
     stock: 10,
   },
   {
@@ -163,6 +181,42 @@ export const tiendaAroma: Producto[] = [
     stock: 10,
   },
   {
+    name: "sahumerios perfum love",
+    photo: ["/sahumerios/perfum/love_f.png", "/sahumerios/perfum/love_b.png"],
+    price: 3500,
+    category: "sahumerios",
+    brand: "perfum",
+    fragrance: "love",
+    stock: 10,
+  },
+  {
+    name: "sahumerios perfum misticBlue",
+    photo: ["/sahumerios/perfum/misticblue_f.png", "/sahumerios/perfum/misticblue_b.png"],
+    price: 3500,
+    category: "sahumerios",
+    brand: "perfum",
+    fragrance: "misticBlue",
+    stock: 10,
+  },
+  {
+    name: "sahumerios magicos atraeDinero",
+    photo: ["/sahumerios/magicos/atraedinero_f.png", "/sahumerios/magicos/atraedinero_b.png"],
+    price: 3500,
+    category: "sahumerios",
+    brand: "magicos",
+    fragrance: "atraeDinero",
+    stock: 10,
+  },
+  {
+    name: "sahumerios magicos pazYArmonia",
+    photo: ["/sahumerios/magicos/pazyarmonia_f.png", "/sahumerios/magicos/pazyarmonia_b.png"],
+    price: 3500,
+    category: "sahumerios",
+    brand: "magicos",
+    fragrance: "pazYArmonia",
+    stock: 10,
+  },
+  {
     name: "sahumerios argentina momentos",
     photo: ["/sahumerios/argentina/momentos_f.png", "/sahumerios/argentina/momentos_b.png"],
     price: 3500,
@@ -205,6 +259,15 @@ export const tiendaAroma: Producto[] = [
     category: "conos",
     brand: "cannabis",
     fragrance: "waterMelonWonder",
+    stock: 10,
+  },
+  {
+    name: "conos cascada cascada",
+    photo: ["/conos/cascada/conosdecascada.png"],
+    price: 2000,
+    category: "conos",
+    brand: "cascada",
+    fragrance: "cascada",
     stock: 10,
   },
   {
@@ -277,6 +340,15 @@ export const tiendaAroma: Producto[] = [
     category: "shapirus",
     brand: "shapirus",
     fragrance: "vainilla",
+    stock: 10,
+  },
+  {
+    name: "shapirus shapirus startWars",
+    photo: ["/shapirus/startwars.png"],
+    price: 5000,
+    category: "shapirus",
+    brand: "shapirus",
+    fragrance: "startWars",
     stock: 10,
   },
 ];
