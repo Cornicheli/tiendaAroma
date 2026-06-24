@@ -12,6 +12,7 @@ export type Categoria = Producto["category"];
 export type Marca = Producto["brand"];
 
 const CATEGORIAS: Categoria[] = [
+  "aromatizadoresAmbiente",
   "bombasDeOlores",
   "conos",
   "difusores",

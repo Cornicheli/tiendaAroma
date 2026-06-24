@@ -17,9 +17,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Tienda Aroma — Conos, difusores, sahumerios y sprays",
+  title: "Tienda Aroma — Conos, difusores, sahumerios, sprays y aromatizadores",
   description:
-    "Tienda de aromaterapia: conos, difusores, sahumerios y sprays para envolver tus espacios. Hacé tu pedido por WhatsApp.",
+    "Tienda de aromaterapia: conos, difusores, sahumerios, sprays y aromatizadores de ambiente para envolver tus espacios. Hacé tu pedido por WhatsApp.",
 };
 
 export default function RootLayout({

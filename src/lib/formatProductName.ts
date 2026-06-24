@@ -1,6 +1,7 @@
 import type { Producto } from "@/data/tiendaAroma";
 
 const CATEGORY_SINGULAR: Record<Producto["category"], string> = {
+  aromatizadoresAmbiente: "Aromatizador Ambiente",
   bombasDeOlores: "Bomba de olor",
   conos: "Cono",
   difusores: "Difusor",

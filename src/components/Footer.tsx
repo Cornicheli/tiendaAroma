@@ -13,6 +13,7 @@ import {
 } from "@/lib/social";
 
 const categorias = [
+  { label: "Aromatizadores", href: "#productos" },
   { label: "Conos", href: "#productos" },
   { label: "Difusores", href: "#productos" },
   { label: "Sahumerios", href: "#productos" },

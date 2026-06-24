@@ -42,9 +42,9 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Conos, difusores, sahumerios, sprays, shapirus y bombas de olor
-            para acompañar cada momento. Elegí tus favoritos y los coordinamos
-            por WhatsApp.
+            Conos, difusores, sahumerios, sprays, shapirus, aromatizadores y
+            bombas de olor para acompañar cada momento. Elegí tus favoritos y
+            los coordinamos por WhatsApp.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">

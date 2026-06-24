@@ -10,6 +10,7 @@ type Slide = {
 };
 
 const slides: Slide[] = [
+  { label: "Aromatizadores", src: "/shapirus/aromatizadorambiente/minnie_f.png" },
   { label: "Conos", src: "/conos/cannabis/blueDream-f.png" },
   { label: "Difusores", src: "/difusores/aromanza/citronella_f.png" },
   { label: "Sahumerios", src: "/sahumerios/aromanza/confianza_f.png" },

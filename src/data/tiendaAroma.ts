@@ -2,7 +2,7 @@ export interface Producto {
   name: string;
   photo: string[];
   price: number;
-  category: "difusores" | "spray" | "sahumerios" | "conos" | "bombasDeOlores" | "shapirus";
+  category: "difusores" | "spray" | "sahumerios" | "conos" | "bombasDeOlores" | "shapirus" | "aromatizadoresAmbiente";
   brand: "aromanza" | "buenaEnergia" | "cannabis" | "perfum" | "bombasDeOlores" | "shapirus" | "argentina" | "magicos" | "cascada";
   fragrance: string;
   stock: number;
@@ -349,6 +349,30 @@ export const tiendaAroma: Producto[] = [
     category: "shapirus",
     brand: "shapirus",
     fragrance: "startWars",
+    stock: 10,
+  },
+  {
+    name: "aromatizadoresAmbiente shapirus minnie",
+    photo: [
+      "/shapirus/aromatizadorambiente/minnie_f.png",
+      "/shapirus/aromatizadorambiente/minnie_b.png",
+    ],
+    price: 6000,
+    category: "aromatizadoresAmbiente",
+    brand: "shapirus",
+    fragrance: "minnie",
+    stock: 10,
+  },
+  {
+    name: "aromatizadoresAmbiente shapirus stitch",
+    photo: [
+      "/shapirus/aromatizadorambiente/stitch_f.png",
+      "/shapirus/aromatizadorambiente/stitch_b.png",
+    ],
+    price: 6000,
+    category: "aromatizadoresAmbiente",
+    brand: "shapirus",
+    fragrance: "stitch",
     stock: 10,
   },
 ];
