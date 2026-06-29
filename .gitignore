@@ -39,6 +39,13 @@ yarn-error.log*
 
 # claude code local settings
 .claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# playwright mcp artifacts
+.playwright-mcp/
+
+# dev logs
+dev.log
 
 # typescript
 *.tsbuildinfo

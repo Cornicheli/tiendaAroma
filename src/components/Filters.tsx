@@ -12,13 +12,17 @@ export type Categoria = Producto["category"];
 export type Marca = Producto["brand"];
 
 const CATEGORIAS: Categoria[] = [
-  "aromatizadoresAmbiente",
+  "aerosolesAmbiente",
   "bombasDeOlores",
   "conos",
   "difusores",
+  "difusoresAmbiente",
+  "kitsDisney",
+  "portaSahumerios",
   "sahumerios",
   "shapirus",
   "spray",
+  "textiles",
 ];
 const MARCAS: Marca[] = [
   "argentina",
@@ -29,6 +33,7 @@ const MARCAS: Marca[] = [
   "cascada",
   "magicos",
   "perfum",
+  "portaSahumerios",
   "shapirus",
 ];
 
