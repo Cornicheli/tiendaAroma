@@ -1,6 +1,6 @@
 "use client";
 
-import { Plus, Check } from "lucide-react";
+import { Minus, Plus, Trash2 } from "lucide-react";
 import type { Producto } from "@/data/tiendaAroma";
 import { useCart } from "@/context/CartContext";
 import { cn } from "@/lib/cn";
@@ -12,11 +12,10 @@ import {
 import { ProductImage } from "./ProductImage";
 
 export function ProductCard({ producto }: { producto: Producto }) {
-  const { addItem, getQuantity } = useCart();
+  const { addItem, updateQty, getQuantity } = useCart();
   const cantidadEnCarrito = getQuantity(producto.name);
   const sinStock = producto.stock === 0;
   const limiteAlcanzado = cantidadEnCarrito >= producto.stock;
-  const disabled = sinStock || limiteAlcanzado;
 
   const tieneVuelta = producto.photo.length > 1;
   const stockBadge = getStockBadge(producto.stock);
@@ -69,30 +68,56 @@ export function ProductCard({ producto }: { producto: Producto }) {
           <p className="font-serif text-2xl font-semibold text-foreground">
             {formatPrice(producto.price)}
           </p>
-          <button
-            type="button"
-            onClick={() => addItem(producto)}
-            disabled={disabled}
-            className={cn(
-              "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-semibold transition-all",
-              disabled
-                ? "cursor-not-allowed bg-muted text-muted-foreground"
-                : "bg-primary text-primary-foreground hover:bg-primary/90 active:scale-95"
-            )}
-            aria-label={`Agregar ${formatProductName(producto)} al carrito`}
-          >
-            {cantidadEnCarrito > 0 ? (
-              <>
-                <Check className="size-3.5" />
+          {cantidadEnCarrito > 0 ? (
+            <div className="inline-flex items-center gap-0.5 rounded-full bg-primary p-1 text-primary-foreground">
+              <button
+                type="button"
+                onClick={() =>
+                  updateQty(producto.name, cantidadEnCarrito - 1)
+                }
+                className="rounded-full p-1.5 transition-colors hover:bg-primary-foreground/15 active:scale-95"
+                aria-label={
+                  cantidadEnCarrito === 1
+                    ? `Quitar ${formatProductName(producto)} del carrito`
+                    : `Restar una unidad de ${formatProductName(producto)}`
+                }
+              >
+                {cantidadEnCarrito === 1 ? (
+                  <Trash2 className="size-3.5" />
+                ) : (
+                  <Minus className="size-3.5" />
+                )}
+              </button>
+              <span className="min-w-5 text-center text-xs font-semibold">
                 {cantidadEnCarrito}
-              </>
-            ) : (
-              <>
+              </span>
+              <button
+                type="button"
+                onClick={() => addItem(producto)}
+                disabled={limiteAlcanzado}
+                className="rounded-full p-1.5 transition-colors hover:bg-primary-foreground/15 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
+                aria-label={`Sumar una unidad de ${formatProductName(producto)}`}
+              >
                 <Plus className="size-3.5" />
-                Agregar
-              </>
-            )}
-          </button>
+              </button>
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={() => addItem(producto)}
+              disabled={sinStock}
+              className={cn(
+                "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-semibold transition-all",
+                sinStock
+                  ? "cursor-not-allowed bg-muted text-muted-foreground"
+                  : "bg-primary text-primary-foreground hover:bg-primary/90 active:scale-95"
+              )}
+              aria-label={`Agregar ${formatProductName(producto)} al carrito`}
+            >
+              <Plus className="size-3.5" />
+              Agregar
+            </button>
+          )}
         </div>
       </div>
     </article>

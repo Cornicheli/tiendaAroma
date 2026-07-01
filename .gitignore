@@ -52,3 +52,6 @@ dev.log
 next-env.d.ts
 
 .vercel
+
+# catalog screenshots
+/catalog-*.jpeg

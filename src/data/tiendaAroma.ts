@@ -420,7 +420,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus amour",
     photo: ["/shapirus/aerosolesdeambiente/amour.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "amour",
@@ -429,7 +429,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus bamboo",
     photo: ["/shapirus/aerosolesdeambiente/bamboo.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "bamboo",
@@ -438,7 +438,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus blubblegun",
     photo: ["/shapirus/aerosolesdeambiente/blubblegun.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "blubblegun",
@@ -447,7 +447,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus blue",
     photo: ["/shapirus/aerosolesdeambiente/blue.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "blue",
@@ -456,7 +456,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus bosqueFloral",
     photo: ["/shapirus/aerosolesdeambiente/bosquefloral.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "bosqueFloral",
@@ -465,7 +465,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus citrus",
     photo: ["/shapirus/aerosolesdeambiente/citrus.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "citrus",
@@ -474,7 +474,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus cocoVai",
     photo: ["/shapirus/aerosolesdeambiente/cocovai.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "cocoVai",
@@ -483,7 +483,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus cony",
     photo: ["/shapirus/aerosolesdeambiente/cony.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "cony",
@@ -492,7 +492,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus duret",
     photo: ["/shapirus/aerosolesdeambiente/duret.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "duret",
@@ -501,7 +501,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus floresBlanca",
     photo: ["/shapirus/aerosolesdeambiente/floresblanca.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "floresBlanca",
@@ -510,7 +510,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus jazmin",
     photo: ["/shapirus/aerosolesdeambiente/jazmin.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "jazmin",
@@ -519,7 +519,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus lavanda",
     photo: ["/shapirus/aerosolesdeambiente/lavanda.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "lavanda",
@@ -528,7 +528,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus limon",
     photo: ["/shapirus/aerosolesdeambiente/limon.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "limon",
@@ -537,7 +537,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus mery",
     photo: ["/shapirus/aerosolesdeambiente/mery.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "mery",
@@ -546,7 +546,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus pitanga",
     photo: ["/shapirus/aerosolesdeambiente/pitanga.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "pitanga",
@@ -555,7 +555,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus sandiaPepino",
     photo: ["/shapirus/aerosolesdeambiente/sandiapepino.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "sandiaPepino",
@@ -564,7 +564,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus uva",
     photo: ["/shapirus/aerosolesdeambiente/uva.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "uva",
@@ -573,7 +573,7 @@ export const tiendaAroma: Producto[] = [
   {
     name: "aerosolesAmbiente shapirus vainilla",
     photo: ["/shapirus/aerosolesdeambiente/vainilla.png"],
-    price: 6000,
+    price: 6500,
     category: "aerosolesAmbiente",
     brand: "shapirus",
     fragrance: "vainilla",
