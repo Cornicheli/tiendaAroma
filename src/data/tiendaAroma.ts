@@ -698,7 +698,7 @@ export const tiendaAroma: Producto[] = [
   },
   {
     name: "textiles shapirus stiitch",
-    photo: ["/shapirus/textiles/stiitch.png"],
+    photo: ["/shapirus/textiles/stitch.png"],
     price: 5000,
     category: "textiles",
     brand: "shapirus",
